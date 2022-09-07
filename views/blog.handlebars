@@ -6,6 +6,28 @@
   <p>Submitted by: {{user.name}}</p>
   <br><br>
   <p class="blogText">{{content}}</p>
-  <p>
-  </p>
+  <br>
+
+  {{#if comments.length}}
+  <div>
+  <h4>Comments</h4>
+
+  {{#each comments as |comment| }}
+    <h5>{{comment_content}}</h5>
+    {{/each}}
+
+  </div>
+    {{/if}}
+  </div>
+
+  <form action="commenting" class="add-Comment">
+    <label for="comment-content">   Comment: </label>
+    <br>
+      <textarea name="commentT" id="commentText" cols="30" rows="10"></textarea>
+
+    <button type="submit" class="btn btn-primary">Add Comment</button>
+  </form>
+  
+
 </div>
+<script src="/js/comment.js"></script>

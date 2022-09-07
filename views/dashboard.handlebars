@@ -10,16 +10,16 @@
     <br><br>
     </div>
   <div class="col-md-6 newBlog">
-    <form class="form new-project-form">
+    <form class="form new-blog-form">
       <div class="form-group">
-        <label for="project-name">Title:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <label for="blog-name">Title:</label>
+        <input class="form-input" type="text" id="blog-title" name="blog-name" />
       </div>
       <br>
       <div class="form-group">
-        <label for="project-desc">Content:</label>
+        <label for="blog-desc">Content:</label>
         <br>
-        <textarea class="form-input blogContent" id="project-desc" name="project-desc"></textarea>
+        <textarea class="form-input blogContent" id="blog-content" name="blog-desc"></textarea>
       </div>
 
       <br><br>
@@ -30,13 +30,13 @@
   </div>
 
   {{#if blogs.length}}
-  <div class="col-md-6 project-list">
+  <div class="col-md-6 blog-list">
     <h3>Previous Blogs</h3>
 
     {{#each blogs as |blog|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/project/{{blog.id}}">{{blog.title}}</a></h4>
+        <h4><a href="/blog/{{id}}">{{title}}</a></h4>
       </div>
   
       <div class="col-md-4">
