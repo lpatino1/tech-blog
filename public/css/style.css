@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.headerTitle{
+    font-size: 2rem;
+}
+
+nav>a{
+    color: white;
+    text-decoration: none;
+   
+}
+.navbar{
+    background-color: darkblue;
+}
+
+.blog{
+    border: 2px solid grey;
+    max-width: 50vw;
+    min-height: 40vh;
+}
