@@ -1,10 +1,14 @@
-<!-- Loop over each object in the projects array -->
+<div id="homeHeader">
+  <h1 id="homeheaderContent">Recent Posts</h1>
+</div>
+<br>
 {{#each blogs as |blog| }}
 <div class="row mb-4 blog">
   <div class="col-md-5">
     <h2>
-      <a href="/blog/{{blog.id}}">{{blog.title}}</a>
+      <a class="blogTitleLink" href="/blog/{{blog.id}}">{{blog.title}}</a>
     </h2>
+    <br>
     <p>
       {{format_date blog.date_created}}
     </p>
@@ -16,4 +20,5 @@
     </p>
   </div>
 </div>
+<br>
 {{/each}}

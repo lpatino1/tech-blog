@@ -4,40 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fund My Project!</title>
+  <title>TechBlog</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
-    <header class="2 headerTitle">
-      <nav class="display-flex justify-space-between align-center p-2 navbar">
-        <div>
-      <h1>
-        <a href="/">TechBlog</a>
-      </h1>
-        </div>
-        
-        <!-- Conditionally render login or logout links -->
+
+    <nav class="display-flex justify-space-between align-center navbar">
+      <div>
+        <h1>
+          <a id="navbarHeader" href="/">TechBlog</a>
+        </h1>
+      </div>
+
+      <div >
         {{#if logged_in}}
-        <a href="/profile">Dashboard</a> 
-        <a href="/homepage">Home</a> 
-        <button class="no-button" id="logout">logout</button>
+        <a class="navbarlinks" href="/profile">Dashboard</a>
+        <a class="navbarlinks" href="/">Home</a>
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/profile">Dashboard</a> 
-        <a href="/homepage">Home</a> 
-        <a href="/login">Login</a>
+        <a class="navbarlinks" href="/profile">Dashboard</a>
+        <a class="navbarlinks" href="/">Home</a>
+        <a class="navbarlinks" href="/login">Login</a>
         {{/if}}
-     
-      </nav>
-    </header>
+      </div>
+      <!-- Conditionally render login or logout links -->
+
+    </nav>
+
     <main class="container container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
     <footer>
-      
+
     </footer>
   </div>
 

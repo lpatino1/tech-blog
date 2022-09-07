@@ -1,23 +1,85 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 
-.headerTitle{
-    font-size: 2rem;
+body{
+    background-color: #f5f8f0;
 }
 
-nav>a{
+.navbarlinks{
     color: white;
     text-decoration: none;
+    padding: 20px;
    
 }
+
+.navbarlinks:hover{
+    border: 1px solid white;
+    background-color: bisque;
+    color: black;
+}
+
+#navbarHeader{
+    font-size: 4rem;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
 .navbar{
-    background-color: darkblue;
+    background-color: #161c0c;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
 }
 
 .blog{
     border: 2px solid grey;
+    background-color: #80804D;
+    color: white;
     max-width: 50vw;
     min-height: 40vh;
+    margin-left: 50px;
+}
+
+.newBlog{
+    display: flex;
+    background-color: #80804D;
+    max-width: 50vw;
+    min-height: 30vh;
+    font-size: 1.3rem;
+    justify-content: center;
+}
+
+.blogTitleLink{
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px dashed #161c0c;
+}
+
+/* .blogLinkTitle:hover{
+    color: black;
+    border: #161c0c 1px solid;
+} */
+
+.blogContent{
+    min-height: 30vh;
+    min-width: 40vw;
+}
+
+.btn-primary{
+    padding: 10px;
+}
+
+#homeHeader{
+    background-color: #CCCC99;
+}
+
+#homeheaderContent{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    padding: 10px 0;
 }
