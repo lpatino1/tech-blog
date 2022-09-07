@@ -21,9 +21,12 @@
         
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
+        <a href="/profile">Dashboard</a> 
+        <a href="/homepage">Home</a> 
         <button class="no-button" id="logout">logout</button>
         {{else}}
+        <a href="/profile">Dashboard</a> 
+        <a href="/homepage">Home</a> 
         <a href="/login">Login</a>
         {{/if}}
      
